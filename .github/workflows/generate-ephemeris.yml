@@ -49,7 +49,7 @@ jobs:
             echo "Generating ephemeris for: $TARGET_DATE (Day: $DAY, Month: $MONTH, Year: $YEAR)"
             
             # Call the API endpoint
-            curl -X POST https://your-domain.vercel.app/api/generate-ephemeris \
+            curl -X POST https://programming-ephemerides.vercel.app/api/generate-ephemeris \
               -H "Content-Type: application/json" \
               -d "{\"day\": $DAY, \"month\": $MONTH, \"year\": $YEAR}" \
               --max-time 30 \
@@ -70,13 +70,10 @@ jobs:
           NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
         run: |
           echo "Verifying generated ephemeris..."
-          
-          # Check today's ephemeris
           TODAY=$(date +%d)
           MONTH=$(date +%m)
-          
-          curl -s "https://your-domain.vercel.app/api/generate-ephemeris?day=$TODAY&month=$MONTH" | jq '.'
-          
+          RESPONSE=$(curl -s "https://programming-ephemerides.vercel.app/api/generate-ephemeris?day=$TODAY&month=$MONTH")
+          echo "$RESPONSE" | jq '.' || { echo "API did not return valid JSON!"; echo "$RESPONSE"; exit 1; }
           echo "Verification completed!"
 
       - name: Notify completion
