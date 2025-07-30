@@ -44,8 +44,8 @@ export default function ProgrammingEphemeris() {
       const { data, error } = await supabase
         .from("ephemerides")
         .select("event")
-        .eq("historical_day", day)
-        .eq("historical_month", month)
+        .eq("day", day)
+        .eq("month", month)
         .order("year", { ascending: false })
         .limit(1)
 
