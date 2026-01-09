@@ -1,12 +1,49 @@
-# Programming Ephemeris
+# Programming Ephemerides
 
-A Next.js project that displays historical programming-related events (efemérides) for each day, using Supabase as the backend. This project connects a Model Context Protocol (MCP) to Supabase, allowing Cursor to have access and context to the database for enhanced features and automation.
+<!-- Badges -->
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) <!-- To be updated with actual CI/CD status -->
+[![Deployment](https://img.shields.io/badge/deployment-vercel-black)](#) <!-- To be updated with deployment status -->
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-This POC was made following the tutorial from [MoureDev by Brais Moure](https://www.youtube.com/watch?v=BWIhNQ-DvqY&ab_channel=MoureDevbyBraisMoure), using v0 from Vercel, Cursor, ChatGPT API, Supabase, GitHub Actions, and deployed with Vercel.
+A Next.js web application that showcases historical programming-related events (ephemerides) for each day of the year. Built with modern web technologies and powered by Supabase, this project demonstrates the integration of AI-driven content generation with a serverless backend architecture.
 
----
+## 🚀 Live Demo
 
-## Getting Started
+<!-- To be added after deployment -->
+**Live URL:** *Coming soon - to be updated after Vercel deployment*
+
+## 📖 About the Project
+
+Programming Ephemerides is an educational and engaging platform that brings historical programming milestones to life. Each day, users can discover significant events from computer science history, from the creation of programming languages to groundbreaking software releases and technological achievements.
+
+### Key Benefits
+
+- **Educational Value**: Learn about programming history and important milestones in technology
+- **Daily Discovery**: Automated content generation ensures fresh, relevant historical events
+- **Modern Architecture**: Demonstrates best practices in full-stack development with Next.js and Supabase
+- **AI Integration**: Leverages OpenAI API for intelligent content generation through automated workflows
+- **Scalable Backend**: Supabase provides a robust, serverless database solution with real-time capabilities
+
+### Project Origins
+
+This proof-of-concept was inspired by the tutorial from [MoureDev by Brais Moure](https://www.youtube.com/watch?v=BWIhNQ-DvqY&ab_channel=MoureDevbyBraisMoure), showcasing the power of modern development tools including v0 from Vercel, Cursor, ChatGPT API, Supabase, and GitHub Actions automation.
+
+## 🛠️ Technology Stack
+
+| Category | Technologies |
+|----------|-------------|
+| **Frontend** | Next.js 15, React 18, TypeScript |
+| **Styling** | Tailwind CSS, Radix UI Components |
+| **Backend** | Supabase (PostgreSQL, Authentication, Storage) |
+| **AI Integration** | OpenAI API (via GitHub Actions) |
+| **Deployment** | Vercel |
+| **CI/CD** | GitHub Actions |
+| **Package Manager** | pnpm |
+| **Development Tools** | ESLint, PostCSS, Model Context Protocol (MCP) |
+
+## 🚦 Getting Started
+
+Follow these steps to set up and run the project locally:
 
 ### 1. Clone the repository
 ```sh
@@ -90,7 +127,7 @@ Open http://localhost:3000 in your browser to see the app.
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 - `app/page.tsx` — Main page, displays the efeméride for today
 - `app/api/generate-ephemeris/route.ts` — API endpoint for generating ephemeris data
@@ -105,14 +142,14 @@ Open http://localhost:3000 in your browser to see the app.
 
 ---
 
-## Customization
+## ⚙️ Customization
 - You can add more columns to the `ephemerides` table as needed (e.g., tags, author, etc.)
 - You can change the logic in `app/page.tsx` to display multiple events per day or filter by year
 - For production, restrict the RLS policies to authenticated users only
 
 ---
 
-## GitHub Actions Setup
+## 🤖 GitHub Actions Setup
 
 To enable automated ephemeris generation:
 
@@ -131,7 +168,9 @@ To enable automated ephemeris generation:
    - Save all data to Supabase
    - Can be triggered manually via GitHub Actions tab
 
-## Notes
+---
+
+## 📝 Notes
 - Make sure your Supabase project is running and the credentials are correct
 - If you change the table structure, update the queries in the code accordingly
 - For any issues, check the Supabase logs and your browser console
@@ -139,5 +178,24 @@ To enable automated ephemeris generation:
 
 ---
 
-## License
+## 👥 Contributors
+
+This project welcomes contributions! Whether you're fixing bugs, improving documentation, or proposing new features, your help is appreciated.
+
+### How to Contribute
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Current Contributors
+
+<!-- Contributors will be automatically added here -->
+Thanks to all the contributors who have helped make this project better!
+
+---
+
+## 📄 License
 MIT 
