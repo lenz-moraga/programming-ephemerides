@@ -92,7 +92,7 @@ CREATE POLICY "Allow public insert" ON ephemerides
 ```
 
 ### 5. Add Example Data (Optional)
-You can use the provided script to add an example efeméride for today:
+You can use the provided script to add an example ephemeris for today:
 
 ```sh
 npx tsx scripts/add-today-ephemeris.ts
@@ -129,11 +129,11 @@ Open http://localhost:3000 in your browser to see the app.
 
 ## 📂 Project Structure
 
-- `app/page.tsx` — Main page, displays the efeméride for today
+- `app/page.tsx` — Main page, displays the ephemeris for today
 - `app/api/generate-ephemeris/route.ts` — API endpoint for generating ephemeris data
 - `lib/supabase.ts` — Supabase client configuration
 - `lib/ephemeris-data.ts` — Local ephemeris data for development
-- `scripts/add-today-ephemeris.ts` — Script to insert and read an efeméride for today
+- `scripts/add-today-ephemeris.ts` — Script to insert and read an ephemeris for today
 - `scripts/test-api.ts` — Script to test the API endpoints
 - `scripts/generate-week-ephemeris.ts` — Script to generate ephemeris for a week
 - `.github/workflows/generate-ephemeris.yml` — GitHub Action for automated generation
