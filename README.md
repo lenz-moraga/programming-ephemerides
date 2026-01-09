@@ -2,15 +2,18 @@
 
 <!-- Badges -->
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#) <!-- To be updated with actual CI/CD status -->
-[![Deployment](https://img.shields.io/badge/deployment-vercel-black)](#) <!-- To be updated with deployment status -->
+[![Deployment](https://img.shields.io/badge/deployment-vercel-black)](https://programming-ephemerides.vercel.app/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A Next.js web application that showcases historical programming-related events (ephemerides) for each day of the year. Built with modern web technologies and powered by Supabase, this project demonstrates the integration of AI-driven content generation with a serverless backend architecture.
 
 ## 🚀 Live Demo
 
-<!-- To be added after deployment -->
-**Live URL:** *Coming soon - to be updated after Vercel deployment*
+✨ **The project is now live!** Visit the public demo at:
+
+**[https://programming-ephemerides.vercel.app/](https://programming-ephemerides.vercel.app/)**
+
+> **Note:** The public demo uses a shared Supabase backend with limited data. For the best experience and to explore the full feature set including automated ephemeris generation, consider setting up your own local instance following the instructions below.
 
 ## 📖 About the Project
 
